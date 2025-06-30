@@ -223,19 +223,7 @@ const LoadingScreen: React.FC = () => {
             ></div>
             
             {/* Animated Glow */}
-            <div 
-              className="absolute top-0 h-full w-20 bg-gradient-to-r from-transparent via-white to-transparent opacity-40 animate-pulse"
-              style={{ 
-                left: `${Math.max(0, progress - 0)}%`,
-                opacity: progress > 0 ? 0 : 0
-              }}
-            ></div>
-          </div>
           
-          <div className="mt-4 text-xs font-mono text-gray-500">
-            {Math.round(progress)}%
-          </div>
-        </div>
 
         {/* Step Indicators */}
         <div className="flex justify-center gap-2 mb-8">
