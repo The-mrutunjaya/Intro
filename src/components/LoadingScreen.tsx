@@ -153,26 +153,8 @@ const LoadingScreen: React.FC = () => {
           </div>
         </div>
 
-        {/* Custom Animations */}
-        <style jsx>{`
-          @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
-            25% { transform: translateY(-20px) rotate(90deg); opacity: 1; }
-            50% { transform: translateY(-10px) rotate(180deg); opacity: 0.8; }
-            75% { transform: translateY(-30px) rotate(270deg); opacity: 0.9; }
-          }
-          .animate-float {
-            animation: float 10s ease-in-out infinite;
-          }
-        `}</style>
-      </div>
-    );
-  }
-
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center overflow-hidden">
-      {/* Dynamic Background Grid */}
-      
+
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(150)].map((_, i) => (
@@ -255,11 +237,5 @@ const LoadingScreen: React.FC = () => {
           </span>
         </div>
       </div>
-
-      {/* Custom Animations */}
-      
-    </div>
-  );
-};
 
 export default LoadingScreen;
